@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --main-h1-font: 'Open Sans', sans-serif;
+    --main-h1-color: #fff;
+
+    --main-p-font: 'Open Sans', sans-serif;
+    --main-p-color: #aaa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 20px;
+    background: #000000;
+}
+
+h1 {
+    color: var(--main-h1-color);
+    font-family: var(--main-h1-font);
+}
+
+p {
+    color: var(--main-p-color);
+    font-family: var(--main-p-font);
+}
