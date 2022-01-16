@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    transition-duration: 250ms;
+}
+
+body {
+    padding: 20px;
+    background: var(--theme-bg-color);
+}
+
+h1, h2, h3, h4, h5 {
+    color: var(--theme-h1-color);
+    font-family: var(--theme-h1-font);
+    transition-duration: 250ms;
+}
+
+p {
+    color: var(--theme-p-color);
+    font-family: var(--theme-p-font);
+}
+
+a {
+    color: var(--theme-a-color);
+    font-family: var(--theme-a-font);
+    text-decoration: none;
+    margin-right: 5px;
+
+}
+
+a:hover {
+    color:var(--theme-a-hover);
+}
+
+    a.th:hover {
+        cursor: pointer;
+    }

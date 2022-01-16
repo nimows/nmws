@@ -1,0 +1,13 @@
+:root {
+    --theme-bg-color: black;
+
+    --theme-h1-font: 'Oswald', sans-serif;
+    --theme-h1-color: white;
+
+    --theme-p-font: 'Oswald', sans-serif;
+    --theme-p-color: grey;
+
+    --theme-a-font: 'Oswald', sans-serif;
+    --theme-a-color: grey;
+    --theme-a-hover: turquoise;
+}

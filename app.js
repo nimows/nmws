@@ -1,35 +1,41 @@
-/* Imports
-*/
+/**
+ * Includes
+ */
 const config = require('./config')
 
 const express = require('express')
 const path = require('path')
-
-/**
- * Init
- */
-const app = new express()
+const cors = require('cors')
+const cookieParser = require('cookie-parser')
 
 /**
  * Variables
  */
+const app = new express()
+
 const host = config.web.host
 const port = config.web.port
 
 /**
- * Config
+ * Settings
  */
-app.use(express.static(__dirname + '/public'))
-
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'pug')
+
+app.use(cookieParser())
+app.use(express.static(path.join(__dirname + '/public')))
+
+app.use(function(req, res, next) {
+    console.log('asddsaasddsa')
+    next()
+})
 
 /**
  * Routes
  */
 app.get('/', (req, res) => {
     let data = {
-        title: 'home'
+        page: 'home'
     }
 
     res.render('home', data)
@@ -37,7 +43,7 @@ app.get('/', (req, res) => {
 
 app.get('/lab', (req, res) => {
     let data = {
-        title: 'lab'
+        page: 'lab'
     }
 
     res.render('lab', data)

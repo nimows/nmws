@@ -1,0 +1,21 @@
+.theme-dark-contrast {
+    --theme-bg-color: black;
+
+    --theme-h1-color: white;
+    
+    --theme-p-color: grey;
+
+    --theme-a-color: grey;
+    --theme-a-hover: turquoise;
+}
+
+.theme-goofy {
+    --theme-bg-color: rgb(73, 204, 150);
+
+    --theme-h1-color: rgb(130, 64, 216);
+    
+    --theme-p-color: rgb(255, 255, 255);
+
+    --theme-a-color: rgb(255, 255, 255);
+    --theme-a-hover: red;
+}
