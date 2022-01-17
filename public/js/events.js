@@ -1,7 +1,14 @@
 window.onload = () => {
 
+    if (window.localStorage.getItem('theme')) {
+        document.body.className = window.localStorage.getItem('theme');
+    } else {
+        document.body.className = 'theme-dark-contrast';
+    }
+
     document.querySelectorAll('.th').forEach(elem => elem.addEventListener('click', (e) => {
         e.preventDefault();
-        document.querySelector('body').className = e.target.getAttribute('name');
-    }))
+        document.body.className = e.target.getAttribute('theme');
+        window.localStorage.setItem('theme', e.target.getAttribute('theme'));
+    }));
 }

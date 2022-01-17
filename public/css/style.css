@@ -4,7 +4,6 @@
 * {
     margin: 0;
     padding: 0;
-    transition-duration: 250ms;
 }
 
 body {
@@ -15,7 +14,6 @@ body {
 h1, h2, h3, h4, h5 {
     color: var(--theme-h1-color);
     font-family: var(--theme-h1-font);
-    transition-duration: 250ms;
 }
 
 p {
@@ -27,14 +25,14 @@ a {
     color: var(--theme-a-color);
     font-family: var(--theme-a-font);
     text-decoration: none;
-    margin-right: 5px;
-
 }
 
-a:hover {
-    color:var(--theme-a-hover);
-}
+    a.th {
+        margin-right: 5px;
+    }
 
     a.th:hover {
         cursor: pointer;
+        transition-duration: 250ms;
+        color: var(--theme-a-hover);
     }
